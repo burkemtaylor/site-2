@@ -1,6 +1,9 @@
 import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
+import Header from "~/components/Header";
+import { headerData } from "./constants/headerData";
+import Footer from "~/components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -25,7 +28,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>{children}</body>
+      <body className={`font-sans ${inter.variable}`}>
+        <Header {...headerData} />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }
