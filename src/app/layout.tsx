@@ -27,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" data-theme="business">
       <body
         className={`font-sans ${inter.variable} flex min-h-screen flex-col`}
       >
