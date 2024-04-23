@@ -1,9 +1,9 @@
 import "~/styles/globals.css";
 
 import { Inter } from "next/font/google";
-import Header from "~/components/Header";
-import { headerData } from "./constants/headerData";
-import Footer from "~/components/Footer";
+import Header from "~/_components/Header";
+import { headerData } from "../constants/headerData";
+import Footer from "~/_components/Footer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -28,7 +28,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`font-sans ${inter.variable}`}>
+      <body
+        className={`font-sans ${inter.variable} flex min-h-screen flex-col`}
+      >
         <Header {...headerData} />
         {children}
         <Footer />
