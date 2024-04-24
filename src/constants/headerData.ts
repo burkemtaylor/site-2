@@ -13,5 +13,6 @@ export const headerData: HeaderProps = {
       ],
     },
     { name: "contact", link: "/contact" },
+    { name: "about", link: "/about" },
   ],
 };
