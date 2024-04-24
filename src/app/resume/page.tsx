@@ -1,11 +1,11 @@
 import Link from "next/link";
 
-const RESUME_URL =
-  "https://utfs.io/f/c6397cca-c11e-4b63-bab6-2a82f464a791-6uferf.pdf";
-
 export default function ResumePage() {
+  const RESUME_URL =
+    "https://utfs.io/f/c6397cca-c11e-4b63-bab6-2a82f464a791-6uferf.pdf";
+
   return (
-    <main className="flex flex-1 flex-col items-center justify-center bg-gradient-to-b from-[#1e3a8a] to-[#b45309]">
+    <main className="flex flex-1 flex-col items-center justify-center bg-transparent">
       <div className="justify-left flex flex-col gap-6  px-16 pt-16">
         {/*Name & Contact Info*/}
         <div className="gap-8">

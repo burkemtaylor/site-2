@@ -31,6 +31,7 @@ export default function RootLayout({
       <body
         className={`font-sans ${inter.variable} flex min-h-screen flex-col`}
       >
+        <div className="dither-bg absolute isolate h-full w-full"></div>
         <Header {...headerData} />
         {children}
         <Footer />
