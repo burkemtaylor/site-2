@@ -9,7 +9,7 @@ export default function ResumePage() {
       <div className="justify-left flex flex-col gap-6  px-16 pt-16">
         {/*Name & Contact Info*/}
         <div className="gap-8">
-          <h1 className="text-3xl">Burke Taylor</h1>
+          <h1 className="text-3xl font-bold">Burke Taylor</h1>
           <div className="flex flex-wrap gap-1">
             <p>980-475-1564</p>
             <p>burkemtaylor@gmail.com</p>
@@ -25,20 +25,19 @@ export default function ResumePage() {
         </div>
         {/*Objective*/}
         <div className="gap-8">
-          <h1 className="text-2xl">Objective</h1>
+          <h1 className="text-2xl font-bold">Objective</h1>
           <div className="flex flex-row gap-4">
             <p>
-              Front-end developer with over five years of experience seeking a
-              stimulating and challenging opportunity where I can leverage my
-              strong technical, problem-solving, communication, and leadership
-              skills
+              Frontend software engineer, creative problem solver, and excellent
+              communicator. Passionate about usable designs and high-quality
+              code.
             </p>
           </div>
         </div>
 
         {/*Education*/}
         <div className="gap-8">
-          <h1 className="text-2xl">Education</h1>
+          <h1 className="text-2xl font-bold">Education</h1>
           <div className="flex flex-row gap-4">
             <p>
               Georgia Institute of Technology — BS, Computer Science with
@@ -49,69 +48,66 @@ export default function ResumePage() {
 
         {/*Experience*/}
         <div className="flex flex-col gap-2">
-          <h1 className="text-2xl">Experience</h1>
+          <h1 className="text-2xl font-bold">Experience</h1>
           <div className="flex flex-col gap-2 px-8">
             <div>
-              <Link
-                href="https://www.onetrust.com/"
-                className="link text-xl"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                ONETRUST
-              </Link>
-              <p className="text-xs">Software Engineer, 2020-Present</p>
+              <div className="flex flex-row gap-2">
+                <p className="text-xl">SOFTWARE ENGINEER</p>
+                <Link
+                  href="https://www.onetrust.com/"
+                  className="link text-xl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  ONETRUST
+                </Link>
+              </div>
+              <p className="align-bottom text-xs">
+                Summer 2019 (intern), 2020-Present
+              </p>
             </div>
 
             <ul className="flex flex-col">
               <li>
-                Maintain, create and develop internal repositories of reusable
-                components ranging from simple structural tools to complex yet
-                usable workflow-builders to empower product teams.
+                Develop and maintain reusable components ranging from simple
+                structural tools to complex and usable workflow-builders to
+                empower product teams.
               </li>
               <li>
-                Collaborate with UX teammates to develop and deliver refreshed
-                navigation interfaces & enhancements
-              </li>
-              <li>
-                Delivered a full UI Refresh and rebrand in less than five months
+                Collaborate with the UX team to develop and deliver refreshed
+                user interfaces and enhancements.
               </li>
               <li>
                 Support a culture of code excellence through code reviews,
-                encouraging code standards, and ensuring code reusability
+                encouraging code standards, and ensuring code reusability.
               </li>
               <li>
                 Vocal and active leader in product design process, communicating
-                technical implementation options in order for product management
-                to assess trade-offs for full-stack solution designs
+                implementation options to assess trade-offs for full-stack
+                solution designs.
               </li>
-            </ul>
-
-            <div>
-              <p className="text-xs">UI Developer Intern, Summer 2019</p>
-            </div>
-            <ul className="flex flex-col">
               <li>
-                Developed UI features and enhancements as part of the Data
-                Subject Access Requests team
+                Delivered a full UI Refresh and rebrand in less than five
+                months.
               </li>
             </ul>
           </div>
 
           <div className="flex flex-col gap-2 px-8">
             <div>
-              <Link
-                href="https://www.manh.com/"
-                className="link text-xl"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                MANHATTAN ASSOCIATES, INC.
-              </Link>
-              <p className="text-xs">
-                {" "}
-                Software Development Intern, Summer 2017 & 2018
-              </p>
+              <div className="flex flex-row gap-2">
+                <p className="text-xl">SOFTWARE DEVELOPMENT INTERN</p>
+                <Link
+                  href="https://www.manh.com/"
+                  className="link text-xl"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  Manhattan Associates, Inc.
+                </Link>
+              </div>
+
+              <p className="text-xs">Summer 2017 & 2018</p>
             </div>
 
             <ul className="flex flex-col">
@@ -130,7 +126,7 @@ export default function ResumePage() {
 
         {/*Skills*/}
         <div className="gap-8">
-          <h1 className="text-2xl">Skills</h1>
+          <h1 className="text-2xl font-bold">Skills</h1>
           <div className="flex flex-wrap gap-4">
             <div className="tooltip tooltip-bottom" data-tip="Javascript">
               <img
@@ -236,7 +232,7 @@ export default function ResumePage() {
 
         {/*Hobbies*/}
         <div className="gap-8">
-          <h1 className="text-2xl">Hobbies</h1>
+          <h1 className="text-2xl font-bold">Hobbies</h1>
           <div className="flex flex-row gap-4">
             <p>
               {`Musician, performer, song writer, and producer for the band `}
@@ -252,7 +248,7 @@ export default function ResumePage() {
           </div>
         </div>
       </div>
-      <div className="justify-right flex flex-col px-16 pb-16">
+      <div className="justify-right flex flex-col px-16 pb-16 pt-8">
         <Link
           className="btn btn-primary"
           download

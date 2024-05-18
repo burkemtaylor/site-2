@@ -29,9 +29,9 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="business">
       <body
-        className={`font-sans ${inter.variable} flex min-h-screen flex-col`}
+        className={`font-sans ${inter.variable} content flex min-h-screen flex-col`}
       >
-        <div className="dither-bg absolute isolate h-full w-full"></div>
+        {/* <Background/> */}
         <Header {...headerData} />
         {children}
         <Footer />
