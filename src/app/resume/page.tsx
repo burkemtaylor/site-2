@@ -1,14 +1,40 @@
+"use client";
+
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+function transitonDelay(x?: number): number {
+  return x ? x * 0.1 : 0;
+}
 
 export default function ResumePage() {
   const RESUME_URL =
     "https://utfs.io/f/c6397cca-c11e-4b63-bab6-2a82f464a791-6uferf.pdf";
 
+  const visible = {
+    opacity: 1,
+    x: 0,
+  };
+
+  const hidden = {
+    opacity: 0,
+    x: -250,
+  };
+
   return (
     <main className="flex flex-1 flex-col items-center justify-center bg-transparent">
-      <div className="justify-left flex flex-col gap-6  px-16 pt-16">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        className="justify-left flex flex-col gap-6  px-16 pt-16"
+      >
         {/*Name & Contact Info*/}
-        <div className="gap-8">
+        <motion.div
+          initial={hidden}
+          animate={visible}
+          transition={{ delay: transitonDelay(0) }}
+          className="gap-8"
+        >
           <h1 className="text-3xl font-bold">Burke Taylor</h1>
           <div className="flex flex-wrap gap-1">
             <p>980-475-1564</p>
@@ -22,9 +48,14 @@ export default function ResumePage() {
               linkedin.com/in/burke-taylor
             </Link>
           </div>
-        </div>
+        </motion.div>
         {/*Objective*/}
-        <div className="gap-8">
+        <motion.div
+          initial={hidden}
+          animate={visible}
+          transition={{ delay: transitonDelay(1) }}
+          className="gap-8"
+        >
           <h1 className="text-2xl font-bold">Objective</h1>
           <div className="flex flex-row gap-4">
             <p>
@@ -33,10 +64,15 @@ export default function ResumePage() {
               code.
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/*Education*/}
-        <div className="gap-8">
+        <motion.div
+          initial={hidden}
+          animate={visible}
+          transition={{ delay: transitonDelay(2) }}
+          className="gap-8"
+        >
           <h1 className="text-2xl font-bold">Education</h1>
           <div className="flex flex-row gap-4">
             <p>
@@ -44,10 +80,15 @@ export default function ResumePage() {
               Honors, May 2020
             </p>
           </div>
-        </div>
+        </motion.div>
 
         {/*Experience*/}
-        <div className="flex flex-col gap-2">
+        <motion.div
+          initial={hidden}
+          animate={visible}
+          transition={{ delay: transitonDelay(3) }}
+          className="flex flex-col gap-2"
+        >
           <h1 className="text-2xl font-bold">Experience</h1>
           <div className="flex flex-col gap-2 px-8">
             <div>
@@ -122,10 +163,15 @@ export default function ResumePage() {
               </li>
             </ul>
           </div>
-        </div>
+        </motion.div>
 
         {/*Skills*/}
-        <div className="gap-8">
+        <motion.div
+          initial={hidden}
+          animate={visible}
+          transition={{ delay: transitonDelay(4) }}
+          className="gap-8"
+        >
           <h1 className="text-2xl font-bold">Skills</h1>
           <div className="flex flex-wrap gap-4">
             <div className="tooltip tooltip-bottom" data-tip="Javascript">
@@ -228,10 +274,15 @@ export default function ResumePage() {
               />
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/*Hobbies*/}
-        <div className="gap-8">
+        <motion.div
+          initial={hidden}
+          animate={visible}
+          transition={{ delay: transitonDelay(5) }}
+          className="gap-8"
+        >
           <h1 className="text-2xl font-bold">Hobbies</h1>
           <div className="flex flex-row gap-4">
             <p>
@@ -246,18 +297,25 @@ export default function ResumePage() {
               </Link>
             </p>
           </div>
-        </div>
-      </div>
-      <div className="justify-right flex flex-col px-16 pb-16 pt-8">
-        <Link
-          className="btn btn-primary"
-          download
-          href={RESUME_URL}
-          target="_blank"
-        >
-          Download Resume
-        </Link>
-      </div>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        initial={hidden}
+        animate={visible}
+        transition={{ delay: transitonDelay(6) }}
+        className="justify-right flex flex-col px-16 pb-16 pt-8"
+      >
+        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link
+            className="btn btn-primary"
+            download
+            href={RESUME_URL}
+            target="_blank"
+          >
+            Download Resume
+          </Link>
+        </motion.button>
+      </motion.div>
     </main>
   );
 }
