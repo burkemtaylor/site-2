@@ -1,9 +1,11 @@
+"use client";
+
 import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-neutral text-neutral-content p-10">
-      <aside>
+    <footer className="mobile:justify-center desktop:justify-between footer bg-neutral p-10 text-neutral-content">
+      <aside className="desktop:block mobile:hidden">
         <img
           src="https://utfs.io/f/c263448d-067a-4604-998d-162cf09c57f3-q13inh.jpg"
           height="50"
@@ -17,7 +19,7 @@ export default function Footer() {
         </p>
       </aside>
       <nav>
-        <h6 className="footer-title">Social</h6>
+        <h6 className="mobile:hidden footer-title">Social</h6>
         <div className="grid grid-flow-col gap-4">
           <Link
             aria-label="Twitter"

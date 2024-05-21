@@ -6,7 +6,7 @@ export default function ProjectsPage() {
     <main className="flex flex-1 items-center justify-center text-base-100">
       <div
         id="cardContainer"
-        className="flex flex-1 flex-row flex-wrap gap-4 px-8"
+        className="flex flex-1 flex-row flex-wrap gap-4 p-8"
       >
         {projectData.map((project) => (
           <ProjectCard key={project.title} {...project} />
