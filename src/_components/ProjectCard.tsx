@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
-import { motion } from "framer-motion";
-
 import { ProjectCardProps } from "~/interfaces/project";
+import Card from "./_primitives/card";
+import { motion } from "framer-motion";
 
 export default function ProjectCard({
   title,
@@ -17,7 +17,7 @@ export default function ProjectCard({
       animate={{ x: 0 }}
       transition={{ ease: "easeOut", duration: 0.8, type: "spring" }}
     >
-      <div className="card w-80 bg-neutral text-neutral-content hover:bg-neutral-content hover:text-neutral">
+      <Card className="w-80 bg-neutral text-neutral-content hover:bg-neutral-content hover:text-neutral">
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
           <p>{description}</p>
@@ -46,7 +46,7 @@ export default function ProjectCard({
             </motion.button>
           </div>
         </div>
-      </div>
+      </Card>
     </motion.div>
   );
 }
