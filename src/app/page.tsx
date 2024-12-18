@@ -20,14 +20,24 @@ export default function HomePage() {
               <p className="text-primary-contrast mb-5">
                 I've been building & maintaining web apps for 5 years.
               </p>
-              <motion.button
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.9 }}
-              >
-                <Link className="btn btn-primary" href="/about">
-                  Get to know me
-                </Link>
-              </motion.button>
+              <div className="flex justify-center gap-2">
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Link className="btn btn-secondary" href="/about">
+                    Get to know me
+                  </Link>
+                </motion.button>
+                <motion.button
+                  whileHover={{ scale: 1.1 }}
+                  whileTap={{ scale: 0.9 }}
+                >
+                  <Link className="btn btn-primary" href="/resume">
+                    See my resume
+                  </Link>
+                </motion.button>
+              </div>
             </div>
           </div>
         </motion.div>

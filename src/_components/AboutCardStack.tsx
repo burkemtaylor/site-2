@@ -4,25 +4,17 @@ import React from "react";
 import Card from "./_primitives/card";
 import { AboutItem } from "~/interfaces/about";
 
+// TODO: Implement hover alt text for images
+
 export default function AboutCardList({
   aboutItems,
 }: {
   aboutItems: AboutItem[];
 }) {
-  const [aboutList, setAboutList] = React.useState(
-    aboutItems.map((item, index) => ({ ...item, color: setColor(index) })),
-  );
+  const [aboutList, setAboutList] = React.useState(aboutItems);
   const [currentItem, setCurrentItem] = React.useState(aboutList[0]);
 
   console.log(aboutList);
-
-  function setColor(index: number) {
-    const colors = [
-      "bg-primary text-primary-content",
-      // "bg-accent text-accent-content",
-    ];
-    return colors[index % colors.length];
-  }
 
   function popItem() {
     const popped = aboutList.shift();
@@ -42,7 +34,9 @@ export default function AboutCardList({
             return (
               <Card
                 key={index}
-                className={`h-full w-full min-w-min rounded bg-cover bg-fixed bg-center ${item.color}`}
+                className={
+                  "h-full w-full min-w-min rounded bg-cover bg-fixed bg-center"
+                }
                 style={{
                   cursor: "pointer",
                   backgroundImage: `url(${item.image})`,

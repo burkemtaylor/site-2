@@ -4,8 +4,8 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="mobile:justify-center desktop:justify-between footer bg-neutral p-10 text-neutral-content">
-      <aside className="desktop:block mobile:hidden">
+    <footer className="footer bg-neutral p-10 text-neutral-content mobile:justify-center desktop:justify-between">
+      <aside className="mobile:hidden desktop:block">
         <img
           src="https://utfs.io/f/c263448d-067a-4604-998d-162cf09c57f3-q13inh.jpg"
           height="50"
@@ -19,8 +19,23 @@ export default function Footer() {
         </p>
       </aside>
       <nav>
-        <h6 className="mobile:hidden footer-title">Social</h6>
+        <h6 className="footer-title mobile:hidden">Social</h6>
         <div className="grid grid-flow-col gap-4">
+          <Link
+            aria-label="BlueSky"
+            href="https://bsky.app/profile/acaer.bsky.social"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              className="fill-current"
+              viewBox="0 0 64 57"
+              width="24"
+              height="24"
+            >
+              <path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"></path>
+            </svg>
+          </Link>
           <Link
             aria-label="Twitter"
             href="https://twitter.com/vejadeja"
