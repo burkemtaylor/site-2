@@ -59,9 +59,10 @@ export default function ResumePage() {
           <h1 className="text-2xl font-bold">Objective</h1>
           <div className="flex flex-row gap-4">
             <p>
-              Frontend software engineer, creative problem solver, and excellent
-              communicator. Passionate about usable designs and high-quality
-              code.
+              Front-end developer with over ve years of experience seeking a
+              stimulating and challenging opportunity where I can leverage my
+              strong technical, problem-solving, communication, and leadership
+              skills
             </p>
           </div>
         </motion.div>
