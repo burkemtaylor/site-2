@@ -59,7 +59,7 @@ export default function ResumePage() {
           <h1 className="text-2xl font-bold">Objective</h1>
           <div className="flex flex-row gap-4">
             <p>
-              Front-end developer with over ve years of experience seeking a
+              Front-end developer with over five years of experience seeking a
               stimulating and challenging opportunity where I can leverage my
               strong technical, problem-solving, communication, and leadership
               skills
