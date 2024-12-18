@@ -4,15 +4,23 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 
 import { HeaderProps } from "~/interfaces/header";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Header({ title, menuItems }: HeaderProps) {
   const dropdown = useRef<HTMLInputElement>(null);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
+
   const handleClick = () => {
-    if (dropdown.current) {
-      dropdown.current.classList.toggle("dropdown-open");
-      (document.activeElement as HTMLElement).blur();
+    if (dropdownOpen) {
+      return closeDropdown();
     }
+
+    setDropdownOpen(!dropdownOpen);
+  };
+
+  const closeDropdown = () => {
+    (document.activeElement as HTMLElement).blur();
+    setDropdownOpen(false);
   };
 
   return (
@@ -71,7 +79,7 @@ export default function Header({ title, menuItems }: HeaderProps) {
           className="menu dropdown-content z-[1] w-52 rounded-box bg-neutral p-2 shadow"
         >
           {menuItems.map((item) => (
-            <li key={item.name}>
+            <li key={item.name} onClick={closeDropdown}>
               <motion.button
                 whileHover={{ scale: 1.1 }}
                 whileTap={{ scale: 0.9 }}
