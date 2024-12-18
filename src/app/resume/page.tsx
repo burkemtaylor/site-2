@@ -303,8 +303,13 @@ export default function ResumePage() {
         initial={hidden}
         animate={visible}
         transition={{ delay: transitonDelay(6) }}
-        className="justify-right flex flex-col px-16 pb-16 pt-8"
+        className="justify-right flex gap-2 px-16 pb-16 pt-8"
       >
+        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+          <Link className="btn btn-secondary" href="/about">
+            Get to know me
+          </Link>
+        </motion.button>
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <Link
             className="btn btn-primary"
