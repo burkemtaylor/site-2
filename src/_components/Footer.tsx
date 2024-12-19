@@ -19,7 +19,7 @@ export default function Footer() {
         </p>
       </aside>
       <nav>
-        <h6 className="footer-title mobile:hidden">Social</h6>
+        <h6 className="footer-title mobile:hidden desktop:flex">Social</h6>
         <div className="grid grid-flow-col gap-4">
           <Link
             aria-label="BlueSky"
