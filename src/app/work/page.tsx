@@ -2,25 +2,20 @@
 
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { transitonDelay } from "~/_utilities/transitionDelay";
+import CallToAction from "~/_components/CallToAction";
 
-function transitonDelay(x?: number): number {
-  return x ? x * 0.1 : 0;
-}
+const visible = {
+  opacity: 1,
+  x: 0,
+};
+
+const hidden = {
+  opacity: 0,
+  x: -250,
+};
 
 export default function ResumePage() {
-  const RESUME_URL =
-    "https://utfs.io/f/c6397cca-c11e-4b63-bab6-2a82f464a791-6uferf.pdf";
-
-  const visible = {
-    opacity: 1,
-    x: 0,
-  };
-
-  const hidden = {
-    opacity: 0,
-    x: -250,
-  };
-
   return (
     <main className="flex flex-1 flex-col items-center justify-center bg-transparent">
       <motion.div
@@ -28,7 +23,6 @@ export default function ResumePage() {
         animate={{ opacity: 1 }}
         className="justify-left flex flex-col gap-6  px-16 pt-16"
       >
-        {/*Name & Contact Info*/}
         <motion.div
           initial={hidden}
           animate={visible}
@@ -49,7 +43,7 @@ export default function ResumePage() {
             </Link>
           </div>
         </motion.div>
-        {/*Objective*/}
+
         <motion.div
           initial={hidden}
           animate={visible}
@@ -67,7 +61,6 @@ export default function ResumePage() {
           </div>
         </motion.div>
 
-        {/*Education*/}
         <motion.div
           initial={hidden}
           animate={visible}
@@ -83,7 +76,6 @@ export default function ResumePage() {
           </div>
         </motion.div>
 
-        {/*Experience*/}
         <motion.div
           initial={hidden}
           animate={visible}
@@ -166,7 +158,6 @@ export default function ResumePage() {
           </div>
         </motion.div>
 
-        {/*Skills*/}
         <motion.div
           initial={hidden}
           animate={visible}
@@ -277,7 +268,6 @@ export default function ResumePage() {
           </div>
         </motion.div>
 
-        {/*Hobbies*/}
         <motion.div
           initial={hidden}
           animate={visible}
@@ -300,28 +290,7 @@ export default function ResumePage() {
           </div>
         </motion.div>
       </motion.div>
-      <motion.div
-        initial={hidden}
-        animate={visible}
-        transition={{ delay: transitonDelay(6) }}
-        className="justify-right flex gap-2 px-16 pb-16 pt-8"
-      >
-        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Link className="btn btn-secondary" href="/about">
-            Get to know me
-          </Link>
-        </motion.button>
-        <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-          <Link
-            className="btn btn-primary"
-            download
-            href={RESUME_URL}
-            target="_blank"
-          >
-            Download Resume
-          </Link>
-        </motion.button>
-      </motion.div>
+      <CallToAction />
     </main>
   );
 }
