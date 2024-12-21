@@ -22,7 +22,7 @@ export default async function BooksPage() {
   return (
     <main className="flex flex-1 flex-col p-8">
       <h1 className="text-2xl font-bold" style={{ paddingBottom: "1rem" }}>
-        Reading
+        reading
       </h1>
       <div className="flex flex-1 flex-wrap items-start justify-start gap-4">
         {currentlyReadingBooks.map((book) => {
@@ -34,7 +34,7 @@ export default async function BooksPage() {
         })}
       </div>
       <h1 className="text-2xl font-bold" style={{ paddingBottom: "1rem" }}>
-        Read
+        read
       </h1>
       <div className="flex flex-1 flex-wrap items-start justify-start gap-4">
         {readBooks.map((book) => {
