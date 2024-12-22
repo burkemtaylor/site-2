@@ -12,7 +12,10 @@ export default function BookCard({ book }: { book: Book }) {
           target="_blank"
           href={book.link}
         >
-          <img src={book.cover} style={{ width: "100px" }}></img>
+          <img
+            src={book.cover}
+            style={{ width: "100px", height: "154px", objectFit: "cover" }}
+          ></img>
         </Link>
       </Card>
     </div>
