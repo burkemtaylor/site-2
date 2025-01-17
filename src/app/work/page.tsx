@@ -43,7 +43,7 @@ const hidden = {
 
 export default function ResumePage() {
   return (
-    <main className="flex flex-1 flex-col items-center justify-center bg-transparent">
+    <main className="flex flex-1 flex-col items-center justify-center bg-transparent mobile:overflow-y-scroll mobile:pb-24 mobile:pt-8 desktop:p-0">
       <motion.div
         initial={hidden}
         animate={visible}

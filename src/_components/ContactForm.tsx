@@ -26,7 +26,7 @@ export default function ContactForm() {
   return (
     <form
       id="contactForm"
-      className="flex-column flex max-w-lg flex-wrap justify-end gap-4"
+      className="flex-column flex max-w-lg flex-wrap justify-end gap-4 mobile:px-4"
       onSubmit={onSubmit}
     >
       <label className="input input-bordered input-primary flex w-full items-center gap-2 bg-neutral text-neutral-content">
