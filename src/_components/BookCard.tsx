@@ -14,7 +14,12 @@ export default function BookCard({ book }: { book: Book }) {
         >
           <img
             src={book.cover}
-            style={{ width: "100px", height: "154px", objectFit: "cover" }}
+            style={{
+              width: "100px",
+              height: "154px",
+              objectFit: "cover",
+              backgroundColor: "black",
+            }}
           ></img>
         </Link>
       </Card>

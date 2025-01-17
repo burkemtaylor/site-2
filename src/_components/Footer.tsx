@@ -18,7 +18,7 @@ export default function Footer() {
           Bumbling around since 1998
         </p>
       </aside>
-      <nav>
+      <nav className="footer-nav">
         <h6 className="footer-title mobile:hidden desktop:flex">Social</h6>
         <div className="grid grid-flow-col gap-4">
           <Link
@@ -28,7 +28,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <svg
-              className="fill-current"
+              className="social-icon fill-current"
               viewBox="0 0 64 57"
               width="24"
               height="24"
@@ -43,7 +43,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <svg
-              className="fill-current"
+              className="social-icon fill-current"
               height="24"
               width="24"
               role="img"
@@ -60,7 +60,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <svg
-              className="fill-current"
+              className="social-icon fill-current"
               height="24"
               width="24"
               role="img"
@@ -77,7 +77,7 @@ export default function Footer() {
             rel="noopener noreferrer"
           >
             <svg
-              className="fill-current"
+              className="social-icon fill-current"
               height="24"
               width="24"
               role="img"
