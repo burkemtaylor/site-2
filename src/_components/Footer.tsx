@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-neutral p-10 text-neutral-content mobile:fixed mobile:bottom-0 mobile:left-0 mobile:z-10 mobile:justify-center mobile:overflow-hidden desktop:relative desktop:justify-between">
+    <footer className="footer bg-neutral text-neutral-content mobile:fixed mobile:-bottom-8 mobile:left-0 mobile:z-10 mobile:justify-center mobile:overflow-hidden mobile:p-8 mobile:pb-16 desktop:relative desktop:bottom-0 desktop:justify-between desktop:p-10">
       <aside className="mobile:hidden desktop:block">
         <img
           src="https://utfs.io/f/c263448d-067a-4604-998d-162cf09c57f3-q13inh.jpg"
@@ -20,7 +20,7 @@ export default function Footer() {
       </aside>
       <nav className="footer-nav">
         <h6 className="footer-title mobile:hidden desktop:flex">Social</h6>
-        <div className="grid grid-flow-col gap-4">
+        <div className="grid grid-flow-col gap-4 mobile:h-6 desktop:h-auto">
           <Link
             aria-label="BlueSky"
             href="https://bsky.app/profile/acaer.bsky.social"

@@ -49,7 +49,7 @@ export default function PnpmIcon() {
             xlinkHref="#b45vdTD8hs"
             opacity="1"
             fill="#f9ad00"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -57,7 +57,7 @@ export default function PnpmIcon() {
             xlinkHref="#a40WtxIl8d"
             opacity="1"
             fill="#f9ad00"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -65,7 +65,7 @@ export default function PnpmIcon() {
             xlinkHref="#h2CN9AEEpe"
             opacity="1"
             fill="#f9ad00"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -73,7 +73,7 @@ export default function PnpmIcon() {
             xlinkHref="#dqv5133G8"
             opacity="1"
             fill="#f9ad00"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -81,7 +81,7 @@ export default function PnpmIcon() {
             xlinkHref="#b1Lv79ypvm"
             opacity="1"
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -89,7 +89,7 @@ export default function PnpmIcon() {
             xlinkHref="#hy1IZWwLX"
             opacity="1"
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -97,7 +97,7 @@ export default function PnpmIcon() {
             xlinkHref="#akQfjxQes"
             opacity="1"
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
         <g>
@@ -105,7 +105,7 @@ export default function PnpmIcon() {
             xlinkHref="#bdSrwE5pk"
             opacity="1"
             fill="#ffffff"
-            fill-opacity="1"
+            fillOpacity="1"
           ></use>
         </g>
       </g>
