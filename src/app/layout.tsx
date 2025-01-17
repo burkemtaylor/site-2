@@ -29,7 +29,7 @@ export default function RootLayout({
   return (
     <html lang="en" data-theme="business">
       <body
-        className={`font-sans ${inter.variable} content flex min-h-screen flex-col`}
+        className={`font-sans ${inter.variable} content flex flex-col mobile:min-h-dvh  desktop:min-h-screen`}
       >
         {/* <Background/> */}
         <Header {...headerData} />
