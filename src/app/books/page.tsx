@@ -20,11 +20,11 @@ export default async function BooksPage() {
   console.log({ readBooks });
 
   return (
-    <main className="flex flex-1 flex-col p-8">
+    <main className="flex flex-1 flex-col mobile:overflow-y-scroll mobile:px-8 mobile:pb-40 mobile:pt-24 desktop:p-8">
       <h1 className="text-2xl font-bold" style={{ paddingBottom: "1rem" }}>
         reading
       </h1>
-      <div className="flex flex-1 flex-wrap items-start justify-start gap-4">
+      <div className="flex flex-1 flex-wrap items-start gap-4 mobile:justify-center desktop:justify-start">
         {currentlyReadingBooks.map((book) => {
           return (
             <div key={book.id} className="flex flex-col">
@@ -33,10 +33,8 @@ export default async function BooksPage() {
           );
         })}
       </div>
-      <h1 className="text-2xl font-bold" style={{ paddingBottom: "1rem" }}>
-        read
-      </h1>
-      <div className="flex flex-1 flex-wrap items-start justify-start gap-4">
+      <h1 className="py-2 text-2xl font-bold">read</h1>
+      <div className="flex flex-1 flex-wrap items-start  gap-4 mobile:justify-center desktop:justify-start">
         {readBooks.map((book) => {
           return (
             <div key={book.id} className="flex flex-col">

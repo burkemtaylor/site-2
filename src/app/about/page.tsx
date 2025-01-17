@@ -11,7 +11,7 @@ export default function AboutPage() {
       initial={{ x: -1000 }}
       animate={{ x: 0 }}
       transition={{ ease: "easeOut", duration: 0.8, type: "spring" }}
-      className="flex h-full w-full flex-1 flex-col items-center gap-8 overflow-y-auto p-8"
+      className="flex h-full w-full flex-1 flex-col items-center gap-8 overflow-y-auto mobile:overflow-y-scroll mobile:px-8 mobile:pb-24 mobile:pt-24 desktop:p-8"
     >
       <Card
         className={
@@ -22,12 +22,7 @@ export default function AboutPage() {
         }}
       >
         <img
-          style={{
-            maxWidth: "850px",
-            objectFit: "cover",
-            overflow: "hidden",
-            maxHeight: "60vh",
-          }}
+          className="object-cover desktop:max-w-2xl"
           src="https://utfs.io/f/pkvLaKJrGXkyOtdXvsoZ3JT6PIN0ESWYe7fKnQdkXshOtFpA"
         ></img>
       </Card>

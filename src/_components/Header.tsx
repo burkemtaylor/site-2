@@ -24,7 +24,7 @@ export default function Header({ title, menuItems }: HeaderProps) {
   };
 
   return (
-    <nav className="navbar bg-neutral text-neutral-content">
+    <nav className="mobile:overfllow-hidden navbar bg-neutral text-neutral-content mobile:fixed mobile:left-0 mobile:top-0 mobile:z-10 desktop:relative">
       <div className="flex-1 pl-2">
         <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
           <Link href="/" className="btn btn-ghost text-xl">
