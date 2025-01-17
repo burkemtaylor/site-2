@@ -1,9 +1,35 @@
 "use client";
 
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { transitonDelay } from "~/_utilities/transitionDelay";
 import CallToAction from "~/_components/CallToAction";
+import AngularIcon from "~/_components/_icons/angular";
+import AtlassianIcon from "~/_components/_icons/atlassian";
+import CSSIcon from "~/_components/_icons/css";
+import CypressIcon from "~/_components/_icons/cypress";
+import FigmaIcon from "~/_components/_icons/figma";
+import GitLabIcon from "~/_components/_icons/gitlab";
+import HTMLIcon from "~/_components/_icons/html";
+import JasmineIcon from "~/_components/_icons/jasmine";
+import JavaScriptIcon from "~/_components/_icons/javacsript";
+import NPMIcon from "~/_components/_icons/npm";
+import PnpmIcon from "~/_components/_icons/pnpm";
+import VSCodeIcon from "~/_components/_icons/vscode";
+import GitIcon from "~/_components/_icons/git";
+import BashIcon from "~/_components/_icons/bash";
+import DrizzleIcon from "~/_components/_icons/drizzle";
+import GitHubCopilotIcon from "~/_components/_icons/github-copilot";
+import GoIcon from "~/_components/_icons/go";
+import NeovimIcon from "~/_components/_icons/neovim";
+import NextJsIcon from "~/_components/_icons/nextjs";
+import PrismaIcon from "~/_components/_icons/prisma";
+import ReactIcon from "~/_components/_icons/react";
+import RedisIcon from "~/_components/_icons/redis";
+import TailwindIcon from "~/_components/_icons/tailwind";
+import CheckmarkIcon from "~/_components/_icons/checkmark";
+import SpringMvcIcon from "~/_components/_icons/springmvc";
+import { projectData } from "~/constants/projects";
+import ProjectCard from "~/_components/ProjectCard";
 
 const visible = {
   opacity: 1,
@@ -19,188 +45,51 @@ export default function ResumePage() {
   return (
     <main className="flex flex-1 flex-col items-center justify-center bg-transparent">
       <motion.div
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        className="justify-left flex flex-col gap-6  px-16 pt-16"
+        initial={hidden}
+        animate={visible}
+        transition={{ delay: transitonDelay(0) }}
+        className="gap-8 pt-8"
       >
-        <motion.div
-          initial={hidden}
-          animate={visible}
-          transition={{ delay: transitonDelay(0) }}
-          className="gap-8"
-        >
-          <h1 className="text-3xl font-bold">Burke Taylor</h1>
-          <div className="flex flex-wrap gap-1">
-            <p>980-475-1564</p>
-            <p>burkemtaylor@gmail.com</p>
-            <Link
-              className="link"
-              href="https://linkedin.com/in/burke-taylor"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              linkedin.com/in/burke-taylor
-            </Link>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={hidden}
-          animate={visible}
-          transition={{ delay: transitonDelay(1) }}
-          className="gap-8"
-        >
-          <h1 className="text-2xl font-bold">Objective</h1>
-          <div className="flex flex-row gap-4">
-            <p>
-              Front-end developer with over five years of experience seeking a
-              stimulating and challenging opportunity where I can leverage my
-              strong technical, problem-solving, communication, and leadership
-              skills
-            </p>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={hidden}
-          animate={visible}
-          transition={{ delay: transitonDelay(2) }}
-          className="gap-8"
-        >
-          <h1 className="text-2xl font-bold">Education</h1>
-          <div className="flex flex-row gap-4">
-            <p>
-              Georgia Institute of Technology — BS, Computer Science with
-              Honors, May 2020
-            </p>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={hidden}
-          animate={visible}
-          transition={{ delay: transitonDelay(3) }}
-          className="flex flex-col gap-2"
-        >
-          <h1 className="text-2xl font-bold">Experience</h1>
-          <div className="flex flex-col gap-2 px-8">
-            <div>
-              <div className="flex flex-row gap-2">
-                <p className="text-xl">SOFTWARE ENGINEER</p>
-                <Link
-                  href="https://www.onetrust.com/"
-                  className="link text-xl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  ONETRUST
-                </Link>
-              </div>
-              <p className="align-bottom text-xs">
-                Summer 2019 (intern), 2020-Present
-              </p>
-            </div>
-
-            <ul className="flex flex-col">
-              <li>
-                Develop and maintain reusable components ranging from simple
-                structural tools to complex and usable workflow-builders to
-                empower product teams.
-              </li>
-              <li>
-                Collaborate with the UX team to develop and deliver refreshed
-                user interfaces and enhancements.
-              </li>
-              <li>
-                Support a culture of code excellence through code reviews,
-                encouraging code standards, and ensuring code reusability.
-              </li>
-              <li>
-                Vocal and active leader in product design process, communicating
-                implementation options to assess trade-offs for full-stack
-                solution designs.
-              </li>
-              <li>
-                Delivered a full UI Refresh and rebrand in less than five
-                months.
-              </li>
-            </ul>
-          </div>
-
-          <div className="flex flex-col gap-2 px-8">
-            <div>
-              <div className="flex flex-row gap-2">
-                <p className="text-xl">SOFTWARE DEVELOPMENT INTERN</p>
-                <Link
-                  href="https://www.manh.com/"
-                  className="link text-xl"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  Manhattan Associates, Inc.
-                </Link>
-              </div>
-
-              <p className="text-xs">Summer 2017 & 2018</p>
-            </div>
-
-            <ul className="flex flex-col">
-              <li>
-                Developed a UI (Angular, HTML5/CSS3) for the Config Director
-                tool and enhanced the Omni-channel application UIs to display
-                data in grid and list modes
-              </li>
-              <li>
-                Converted Knitter/Apache CXF web service to Spring MVC for
-                warehouse and transportation applications
-              </li>
-            </ul>
-          </div>
-        </motion.div>
-
-        <motion.div
-          initial={hidden}
-          animate={visible}
-          transition={{ delay: transitonDelay(4) }}
-          className="gap-8"
-        >
-          <h1 className="text-2xl font-bold">Skills</h1>
-          <div className="flex flex-wrap gap-4">
-            <div className="tooltip tooltip-bottom" data-tip="Javascript">
-              <img
-                src="https://utfs.io/f/623f1ea4-3027-44c4-a614-a6f24700cdf9-2mh.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="JavaScript logo"
-              />
-            </div>
+        <div className="flex text-justify mobile:flex-col mobile:p-8 desktop:flex-row desktop:p-4">
+          <h1 className="text-xl mobile:flex mobile:justify-center mobile:pb-2 desktop:pr-4">
+            Tools I use every day
+          </h1>
+          <div className="flex flex-wrap gap-4 mobile:justify-center desktop:items-center">
             <div className="tooltip tooltip-bottom" data-tip="Angular">
-              <img
-                src="https://utfs.io/f/882de73d-2117-4e82-9b09-97b3636c3426-e75dem.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="Angular logo"
-              />
+              <AngularIcon />
             </div>
-            <div className="tooltip tooltip-bottom" data-tip="ReactJS">
-              <img
-                src="https://utfs.io/f/e00b3088-2e9a-449d-a79a-e55a6d4afa8b-1sj3pb.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="ReactJS logo"
-              />
+            <div className="tooltip tooltip-bottom" data-tip="Atlassian">
+              <AtlassianIcon />
             </div>
-            <div className="tooltip tooltip-bottom" data-tip="NextJS">
-              <img
-                src="https://utfs.io/f/1e096b12-769c-410d-8628-eaf004ad7e1c-hcfblw.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="NextJS logo"
-              />
+            <div className="tooltip tooltip-bottom" data-tip="CSS">
+              <CSSIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Cypress">
+              <CypressIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Figma">
+              <FigmaIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Git">
+              <GitIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="GitLab">
+              <GitLabIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="HTML">
+              <HTMLIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Jasmine">
+              <JasmineIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="JavaScript">
+              <JavaScriptIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="NPM">
+              <NPMIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Pnpm">
+              <PnpmIcon />
             </div>
             <div className="tooltip tooltip-bottom" data-tip="RxJS">
               <img
@@ -211,85 +100,172 @@ export default function ResumePage() {
                 alt="RxJS logo"
               />
             </div>
-            <div className="tooltip tooltip-bottom" data-tip="HTML5">
-              <img
-                src="https://utfs.io/f/55ac22eb-ebf7-4bda-bcca-eb9881f64d4b-1nazmy.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="HTML5 logo"
-              />
-            </div>
             <div className="tooltip tooltip-bottom" data-tip="VSCode">
-              <img
-                src="https://utfs.io/f/7ad36b80-cf2b-4870-aea4-eaab7034f6e5-dcqqqe.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="VSCode logo"
-              />
-            </div>
-            <div className="tooltip tooltip-bottom" data-tip="Git">
-              <img
-                src="https://utfs.io/f/877eaa2c-7bfc-4935-9785-3109840f403e-26z6.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="Git logo"
-              />
-            </div>
-            <div className="tooltip tooltip-bottom" data-tip="Java">
-              <img
-                src="https://utfs.io/f/3285d5fa-2be9-42e7-b751-cbaaf6f5cc6c-1xrfm.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="Java logo"
-              />
-            </div>
-            <div className="tooltip tooltip-bottom" data-tip="Docker">
-              <img
-                src="https://utfs.io/f/7ef632dd-7c90-41ea-8764-5b2ab744db2d-lxr74w.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="Docker logo"
-              />
-            </div>
-            <div className="tooltip tooltip-bottom" data-tip="SQL">
-              <img
-                src="https://utfs.io/f/47609adf-c90a-4bfd-a49e-28e97597db97-2g26.svg"
-                height="36"
-                width="36"
-                role="img"
-                alt="SQL logo"
-              />
+              <VSCodeIcon />
             </div>
           </div>
-        </motion.div>
-
-        <motion.div
-          initial={hidden}
-          animate={visible}
-          transition={{ delay: transitonDelay(5) }}
-          className="gap-8"
-        >
-          <h1 className="text-2xl font-bold">Hobbies</h1>
-          <div className="flex flex-row gap-4">
-            <p>
-              {`Musician, performer, song writer, and producer for the band `}
-              <Link
-                className="link"
-                href="https://open.spotify.com/artist/5TJqhIWpu8vyHOmR2Z5Wow"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                luminism
-              </Link>
-            </p>
+        </div>
+        <div className="flex text-justify mobile:flex-col mobile:p-8 desktop:flex-row desktop:p-4">
+          <h1 className="text-xl mobile:flex mobile:justify-center mobile:pb-2 desktop:pr-4">
+            Tools I'm experimenting with
+          </h1>
+          <div className="flex flex-wrap gap-4 mobile:justify-center desktop:items-center">
+            <div className="tooltip tooltip-bottom" data-tip="Bash">
+              <BashIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Drizzle">
+              <DrizzleIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="GitHub Copilot">
+              <GitHubCopilotIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Go">
+              <GoIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Neovim">
+              <NeovimIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Next.js">
+              <NextJsIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Prisma">
+              <PrismaIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="React">
+              <ReactIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Redis">
+              <RedisIcon />
+            </div>
+            <div className="tooltip tooltip-bottom" data-tip="Tailwind CSS">
+              <TailwindIcon />
+            </div>
           </div>
-        </motion.div>
+        </div>
       </motion.div>
+      <motion.ul
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: transitonDelay(1) }}
+        className="max-md:timeline-compact timeline timeline-vertical timeline-snap-icon px-10 pt-10"
+      >
+        <li>
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:text-end timeline-start mb-10">
+            <div className="text-lg font-black">Coding continues...</div>
+            <div className="flex flex-row gap-2 pt-2"></div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:mb-10 timeline-end">
+            <time className="font-mono italic">April 2021</time>
+            <div className="text-lg font-black">
+              Promoted to SWE at OneTrust
+            </div>
+            <div className="flex flex-row gap-2 pt-2"></div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:text-end timeline-start mb-10">
+            <time className="font-mono italic">March 2020</time>
+            <div className="text-lg font-black">Associate SWE at OneTrust</div>
+            <div className="flex flex-row gap-2 pt-2"></div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:mb-10 timeline-end">
+            <time className="font-mono italic">June 2019</time>
+            <div className="text-lg font-black">Associate SWE at OneTrust</div>
+            <div className="flex flex-row gap-2 pt-2"></div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:text-end timeline-start mb-10">
+            <time className="font-mono italic">Summer 2018, 2019</time>
+            <div className="text-lg font-black">SWE Intern at OneTrust</div>
+            <div className="flex flex-row gap-2 pt-2"></div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:mb-10 timeline-end">
+            <time className="font-mono italic">June 2017</time>
+            <div className="text-lg font-black">
+              SWE Intern at Manhattan Associates
+            </div>
+            <div></div>
+            <div className="flex flex-row gap-2 pt-2"></div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:text-end timeline-start mb-10">
+            <time className="font-mono italic">August 2016</time>
+            <div className="text-lg font-black">Started BS CS at GA Tech</div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:mb-10 timeline-end">
+            <time className="font-mono italic">May 2016</time>
+            <div className="text-lg font-black">
+              Won Sr. Developer Award at Pope Highschool
+            </div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:text-end timeline-start mb-10">
+            <div className="text-lg font-black">Coding begins...</div>
+          </div>
+        </li>
+      </motion.ul>
+      <div
+        id="cardContainer"
+        className="flex flex-1 flex-row flex-wrap justify-center gap-4 p-8"
+      >
+        {projectData.map((project) => (
+          <ProjectCard key={project.title} {...project} />
+        ))}
+      </div>
       <CallToAction />
     </main>
   );

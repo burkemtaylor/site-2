@@ -5,7 +5,6 @@ const API_KEY = process.env.MAILTRAP_API_KEY || "";
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
-  console.log("Data", body);
 
   const options = {
     method: "POST",
@@ -25,7 +24,6 @@ export async function POST(req: NextRequest) {
 
   try {
     const { data } = await axios.request(options);
-    console.log(data);
 
     return NextResponse.json(data, {
       status: 200,

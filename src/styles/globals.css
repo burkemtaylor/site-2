@@ -50,3 +50,13 @@
   padding: 0px 0px;
   overflow: hidden;
 }
+
+.social-icon:hover {
+  color: oklch(var(--a));
+  transition: 0.5s;
+  transform: rotate(10deg);
+}
+
+.social-icon {
+  transition: all 0.25s ease;
+}

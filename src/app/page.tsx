@@ -34,7 +34,7 @@ export default function HomePage() {
                   whileTap={{ scale: 0.9 }}
                 >
                   <Link className="btn btn-primary" href="/work">
-                    see my resume
+                    see my work
                   </Link>
                 </motion.button>
               </div>

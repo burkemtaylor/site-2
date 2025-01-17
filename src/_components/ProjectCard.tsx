@@ -9,6 +9,7 @@ export default function ProjectCard({
   title,
   description,
   link,
+  children,
 }: ProjectCardProps) {
   return (
     <motion.div
@@ -17,10 +18,11 @@ export default function ProjectCard({
       animate={{ x: 0 }}
       transition={{ ease: "easeOut", duration: 0.8, type: "spring" }}
     >
-      <Card className="w-80 bg-neutral text-neutral-content hover:bg-neutral-content hover:text-neutral">
+      <Card className="w-80 bg-neutral text-neutral-content">
         <div className="card-body">
           <h2 className="card-title">{title}</h2>
           <p>{description}</p>
+          <div className="flex flex-row justify-start gap-2">{children}</div>
           <div className="card-actions justify-end">
             <motion.button
               whileHover={{ scale: 1.1 }}
