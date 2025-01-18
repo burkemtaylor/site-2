@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-neutral text-neutral-content mobile:fixed mobile:bottom-0 mobile:left-0 mobile:z-10 mobile:justify-center mobile:overflow-hidden mobile:p-8 desktop:relative desktop:bottom-0 desktop:justify-between desktop:p-10">
+    <footer className="footer bg-neutral text-neutral-content after:fixed after:-bottom-40 after:block after:h-40 after:w-full after:bg-neutral mobile:fixed mobile:bottom-0 mobile:left-0 mobile:z-10 mobile:justify-center mobile:overflow-hidden mobile:p-8 desktop:relative desktop:bottom-0 desktop:justify-between desktop:p-10">
       <aside className="mobile:hidden desktop:block">
         <img
           src="https://utfs.io/f/c263448d-067a-4604-998d-162cf09c57f3-q13inh.jpg"
