@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="footer bg-neutral text-neutral-content after:fixed after:-bottom-40 after:block after:h-40 after:w-full after:bg-neutral mobile:fixed mobile:bottom-0 mobile:left-0 mobile:z-10 mobile:justify-center mobile:overflow-hidden mobile:p-8 desktop:relative desktop:bottom-0 desktop:justify-between desktop:p-10">
+    <footer className="footer bg-neutral text-neutral-content after:fixed after:-bottom-40 after:z-10 after:block after:h-40 after:w-full after:bg-neutral mobile:fixed mobile:bottom-0 mobile:left-0 mobile:z-10 mobile:justify-center mobile:overflow-hidden mobile:p-8 desktop:relative desktop:bottom-0 desktop:justify-between desktop:p-10">
       <aside className="mobile:hidden desktop:block">
         <img
           src="https://utfs.io/f/c263448d-067a-4604-998d-162cf09c57f3-q13inh.jpg"
@@ -15,13 +15,12 @@ export default function Footer() {
         <p>
           Burke Taylor
           <br />
-          Bumbling around since 1998
         </p>
       </aside>
       <nav className="footer-nav">
         <h6 className="footer-title mobile:hidden desktop:flex">Social</h6>
         <div className="grid grid-flow-col gap-4 mobile:h-6 desktop:h-auto">
-          <Link
+          {/* <Link
             aria-label="BlueSky"
             href="https://bsky.app/profile/acaer.bsky.social"
             target="_blank"
@@ -35,8 +34,8 @@ export default function Footer() {
             >
               <path d="M13.873 3.805C21.21 9.332 29.103 20.537 32 26.55v15.882c0-.338-.13.044-.41.867-1.512 4.456-7.418 21.847-20.923 7.944-7.111-7.32-3.819-14.64 9.125-16.85-7.405 1.264-15.73-.825-18.014-9.015C1.12 23.022 0 8.51 0 6.55 0-3.268 8.579-.182 13.873 3.805ZM50.127 3.805C42.79 9.332 34.897 20.537 32 26.55v15.882c0-.338.13.044.41.867 1.512 4.456 7.418 21.847 20.923 7.944 7.111-7.32 3.819-14.64-9.125-16.85 7.405 1.264 15.73-.825 18.014-9.015C62.88 23.022 64 8.51 64 6.55c0-9.818-8.578-6.732-13.873-2.745Z"></path>
             </svg>
-          </Link>
-          <Link
+          </Link> */}
+          {/* <Link
             aria-label="Twitter"
             href="https://twitter.com/vejadeja"
             target="_blank"
@@ -52,7 +51,7 @@ export default function Footer() {
             >
               <path d="M714.163 519.284L1160.89 0H1055.03L667.137 450.887L357.328 0H0L468.492 681.821L0 1226.37H105.866L515.491 750.218L842.672 1226.37H1200L714.137 519.284H714.163ZM569.165 687.828L521.697 619.934L144.011 79.6944H306.615L611.412 515.685L658.88 583.579L1055.08 1150.3H892.476L569.165 687.854V687.828Z"></path>
             </svg>
-          </Link>
+          </Link> */}
           <Link
             aria-label="GitHub"
             href="https://github.com/burkemtaylor"

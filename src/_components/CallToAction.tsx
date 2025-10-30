@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { transitonDelay } from "~/_utilities/transitionDelay";
+import { transitionDelay } from "~/_utilities/transitionDelay";
 
 const RESUME_URL =
-  "https://utfs.io/f/c6397cca-c11e-4b63-bab6-2a82f464a791-6uferf.pdf";
+  "https://ocg9xz0ve4.ufs.sh/f/pkvLaKJrGXkyvURYd7ZVEVD10rbO2GN3edufL8WTSXQtiKq9";
 
 const visible = {
   opacity: 1,
@@ -20,7 +20,7 @@ export default function CallToAction() {
     <motion.div
       initial={hidden}
       animate={visible}
-      transition={{ delay: transitonDelay(1) }}
+      transition={{ delay: transitionDelay(1) }}
       className="justify-right flex gap-2 px-16 pb-16 pt-8"
     >
       <motion.button whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
