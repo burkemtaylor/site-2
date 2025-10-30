@@ -107,7 +107,7 @@ export default function ResumePage() {
         </div>
         <div className="flex text-justify mobile:flex-col mobile:p-8 desktop:flex-row desktop:p-4">
           <h1 className="text-xl mobile:flex mobile:justify-center mobile:pb-2 desktop:pr-4">
-            Other tooles I use
+            Other tools I use
           </h1>
           <div className="flex flex-wrap gap-4 mobile:justify-center desktop:items-center">
             <div className="tooltip tooltip-bottom" data-tip="Bash">
