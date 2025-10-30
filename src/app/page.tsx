@@ -18,7 +18,7 @@ export default function HomePage() {
                 hi, i'm burke
               </h1>
               <p className="text-primary-contrast mb-5">
-                i've been building & maintaining web apps for 5 years.
+                i've been building & maintaining software for 5 years.
               </p>
               <div className="flex justify-center gap-2">
                 <motion.button
