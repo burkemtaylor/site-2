@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { transitonDelay } from "~/_utilities/transitionDelay";
+import { transitionDelay } from "~/_utilities/transitionDelay";
 import CallToAction from "~/_components/CallToAction";
 import AngularIcon from "~/_components/_icons/angular";
 import AtlassianIcon from "~/_components/_icons/atlassian";
@@ -47,12 +47,12 @@ export default function ResumePage() {
       <motion.div
         initial={hidden}
         animate={visible}
-        transition={{ delay: transitonDelay(0) }}
+        transition={{ delay: transitionDelay(0) }}
         className="gap-8 pt-8"
       >
         <div className="flex text-justify mobile:flex-col mobile:p-8 desktop:flex-row desktop:p-4">
           <h1 className="text-xl mobile:flex mobile:justify-center mobile:pb-2 desktop:pr-4">
-            Tools I use every day
+            Tools I use at work
           </h1>
           <div className="flex flex-wrap gap-4 mobile:justify-center desktop:items-center">
             <div className="tooltip tooltip-bottom" data-tip="Angular">
@@ -107,7 +107,7 @@ export default function ResumePage() {
         </div>
         <div className="flex text-justify mobile:flex-col mobile:p-8 desktop:flex-row desktop:p-4">
           <h1 className="text-xl mobile:flex mobile:justify-center mobile:pb-2 desktop:pr-4">
-            Tools I'm experimenting with
+            Other tooles I use
           </h1>
           <div className="flex flex-wrap gap-4 mobile:justify-center desktop:items-center">
             <div className="tooltip tooltip-bottom" data-tip="Bash">
@@ -146,7 +146,7 @@ export default function ResumePage() {
       <motion.ul
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ delay: transitonDelay(1) }}
+        transition={{ delay: transitionDelay(1) }}
         className="max-md:timeline-compact timeline timeline-vertical timeline-snap-icon px-10 pt-10"
       >
         <li>
@@ -165,6 +165,20 @@ export default function ResumePage() {
             <CheckmarkIcon />
           </div>
           <div className="md:mb-10 timeline-end">
+            <time className="font-mono italic">May 2025</time>
+            <div className="text-lg font-black">
+              Promoted to Senior SWE at OneTrust
+            </div>
+            <div className="flex flex-row gap-2 pt-2"></div>
+          </div>
+          <hr />
+        </li>
+        <li>
+          <hr />
+          <div className="timeline-middle">
+            <CheckmarkIcon />
+          </div>
+          <div className="md:text-end timeline-start mb-10">
             <time className="font-mono italic">April 2021</time>
             <div className="text-lg font-black">
               Promoted to SWE at OneTrust
@@ -178,20 +192,8 @@ export default function ResumePage() {
           <div className="timeline-middle">
             <CheckmarkIcon />
           </div>
-          <div className="md:text-end timeline-start mb-10">
-            <time className="font-mono italic">March 2020</time>
-            <div className="text-lg font-black">Associate SWE at OneTrust</div>
-            <div className="flex flex-row gap-2 pt-2"></div>
-          </div>
-          <hr />
-        </li>
-        <li>
-          <hr />
-          <div className="timeline-middle">
-            <CheckmarkIcon />
-          </div>
           <div className="md:mb-10 timeline-end">
-            <time className="font-mono italic">June 2019</time>
+            <time className="font-mono italic">March 2020</time>
             <div className="text-lg font-black">Associate SWE at OneTrust</div>
             <div className="flex flex-row gap-2 pt-2"></div>
           </div>
