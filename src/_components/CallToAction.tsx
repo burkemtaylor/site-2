@@ -3,7 +3,7 @@ import Link from "next/link";
 import { transitionDelay } from "~/_utilities/transitionDelay";
 
 const RESUME_URL =
-  "https://ocg9xz0ve4.ufs.sh/f/pkvLaKJrGXkyvURYd7ZVEVD10rbO2GN3edufL8WTSXQtiKq9";
+  "https://ocg9xz0ve4.ufs.sh/f/pkvLaKJrGXkySuysQ4pRXOHCNTrtwVfcaZkQGlv4g8dyueLA";
 
 const visible = {
   opacity: 1,

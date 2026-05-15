@@ -17,12 +17,6 @@ export const projectData: ProjectCardProps[] = [
     children: nodeWrapper([OdinIcon()]),
   },
   {
-    title: "luminism",
-    description: "w.i.p. site for my band luminism",
-    link: "https://github.com/burkemtaylor/luminism",
-    children: nodeWrapper([NextJsIcon()]),
-  },
-  {
     title: "reangular",
     description: "experimenting with rendering React inside Angular apps",
     link: "https://github.com/burkemtaylor/reangular",

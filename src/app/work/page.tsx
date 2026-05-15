@@ -28,6 +28,8 @@ import RedisIcon from "~/_components/_icons/redis";
 import TailwindIcon from "~/_components/_icons/tailwind";
 import CheckmarkIcon from "~/_components/_icons/checkmark";
 import SpringMvcIcon from "~/_components/_icons/springmvc";
+import ClaudeIcon from "~/_components/_icons/claude";
+import WindsurfIcon from "~/_components/_icons/windsurf";
 import { projectData } from "~/constants/projects";
 import ProjectCard from "~/_components/ProjectCard";
 
@@ -55,6 +57,9 @@ export default function ResumePage() {
             Tools I use at work
           </h1>
           <div className="flex flex-wrap gap-4 mobile:justify-center desktop:items-center">
+            <div className="tooltip tooltip-bottom" data-tip="Windsurf">
+              <WindsurfIcon />
+            </div>
             <div className="tooltip tooltip-bottom" data-tip="Angular">
               <AngularIcon />
             </div>
@@ -110,6 +115,9 @@ export default function ResumePage() {
             Other tools I use
           </h1>
           <div className="flex flex-wrap gap-4 mobile:justify-center desktop:items-center">
+            <div className="tooltip tooltip-bottom" data-tip="Claude">
+              <ClaudeIcon />
+            </div>
             <div className="tooltip tooltip-bottom" data-tip="Bash">
               <BashIcon />
             </div>
@@ -245,7 +253,7 @@ export default function ResumePage() {
           <div className="md:mb-10 timeline-end">
             <time className="font-mono italic">May 2016</time>
             <div className="text-lg font-black">
-              Won Sr. Developer Award at Pope Highschool
+              Won Sr. Developer Award at Pope High School
             </div>
           </div>
           <hr />
