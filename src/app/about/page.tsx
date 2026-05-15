@@ -31,7 +31,7 @@ export default function AboutPage() {
           maxWidth: "850px",
         }}
       >
-        hi, i'm burke. i've been a software developer for 5 years. in this
+        hi, i'm burke. i've been a software developer for 6 years. in this
         domain i've focused on code reusability and facilitating high quality
         user experiences. i'm also passionate about books, film, games and
         music, having founded my band{" "}
